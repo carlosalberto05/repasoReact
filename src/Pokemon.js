@@ -28,8 +28,8 @@ const Pokemon = () => {
     <div>
       <h4>Desde los Pokemones</h4>
       <ol style={{ textAlign: "left" }}>
-        {pokemones.map((pokemon) => {
-          return <li>{pokemon.name}</li>;
+        {pokemones.map((pokemon, i) => {
+          return <li key={pokemon + i}>{pokemon.name}</li>;
         })}
       </ol>
     </div>
