@@ -22,8 +22,6 @@ const Pokemon = () => {
     getPokemons();
   }, []);
 
-  console.log(pokemones);
-
   return (
     <div>
       <h4>Desde los Pokemones</h4>
